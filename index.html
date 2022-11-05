@@ -1,39 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>Web App</title>
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+    <body>
+        <div id="sidebar">
+            <div id="container-sb">
+                <div class="sidebar-btn" id="toplogo">toplogo</div>
+                <div class="sidebar-btn" id="play-sb">play</div>
+                <div class="sidebar-btn" id="puzzles-sb">puzzles</div>
+                <div class="sidebar-btn" id="learn-sb">learn</div>
+                <div class="sidebar-btn" id="watch-sb">watch</div>
+                <div class="sidebar-btn" id="news-sb">news</div>
+                <div class="sidebar-btn" id="social-sb">social</div>
+                <div class="sidebar-btn" id="more-sb">more</div>
+                <div class="sidebar-btn" id="upgrade-sb">upgrade</div>
+                <input class="sidebar-btn" id="search" value="search" />
+            </div>
+            <div id="fill-sb"></div>
+        </div>
+        </div>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
-
-</head>
-
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
-
-    <main>
-
-    </main>
-
-</body>
-
+        <main>
+            <div id="main1-fill"></div>
+            <div id="alpha75">
+                <div id="personal">personal</div>
+                <div id="promo-img">promo-img</div>
+                <div id="trophy">trophy</div>
+                <div id="play-boards">
+                    <div class="p-b" id="play-container">
+                        <div class="play-btn" id="play-mode">play-mode</div>
+                        <div class="play-btn" id="play-new">play-new</div>
+                        <div class="play-btn" id="play-comp">play-comp</div>
+                        <div class="play-btn" id="play-friend">play-friend</div>
+                    </div>
+                    <div class="p-b boards-container" >
+                        <div class="chessboard" id="board1"></div>
+                        <label>Solve Puzzle</label>
+                    </div>
+                    <div class="p-b boards-container" >
+                        <div class="chessboard" id="board2"></div>
+                        <label>Start Lesson</label>
+                    </div>
+                    <div class="p-b boards-container" >
+                        <div class="chessboard" id="board3"></div>
+                        <label>Review Game</label>
+                    </div>
+                </div>
+                <div id="daily-games">daily-games</div>
+            </div>
+            <div id="main2-fill"></div>
+        </main>
+    </body>
 </html>
