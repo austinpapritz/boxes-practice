@@ -1,11 +1,34 @@
-/* Imports */
+const ul = document.querySelector('#ul');
+const inputEl = document.getElementById('input');
+const btnEl = document.getElementById('btn');
 
-/* Get DOM Elements */
+const playCont = document.getElementById('play-container');
 
-/* State */
+let arrs = ['Bees', 'Birds', 'Deer'];
+let playarrs = [];
 
-/* Events */
+let addLi = arrs.map((arr) => {
+    let li = document.createElement('li');
+    li.textContent = arr;
+    return li;
+});
 
-/* Display Functions */
+ul.append(...addLi);
 
-// (don't forget to call any display functions you want to run on page load!)
+btnEl.addEventListener('click', function () {
+    let playarrs = [];
+    let value = inputEl.value;
+    if (value === '') {
+        return;
+    }
+    inputEl.value = '';
+    playarrs.push(value);
+
+    let addDiv = playarrs.map((playarr) => {
+        let div = document.createElement('div');
+        div.textContent = playarr;
+        div.classList.add('play-btn');
+        return div;
+    });
+    playCont.append(...addDiv);
+});
