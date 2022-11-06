@@ -1,11 +1,13 @@
-/* Imports */
+const ul = document.querySelector('#ul');
+const inputEl = document.getElementById('input');
+const btnEl = document.getElementById('btn');
 
-/* Get DOM Elements */
+let arrs = ['Bees', 'Birds', 'Deer'];
 
-/* State */
+let nodes = arrs.map((arr) => {
+    let li = document.createElement('li');
+    li.textContent = arr;
+    return li;
+});
 
-/* Events */
-
-/* Display Functions */
-
-// (don't forget to call any display functions you want to run on page load!)
+ul.append(...nodes);
