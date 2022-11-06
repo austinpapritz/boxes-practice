@@ -18,6 +18,9 @@ ul.append(...addLi);
 btnEl.addEventListener('click', function () {
     let playarrs = [];
     let value = inputEl.value;
+    if (value === '') {
+        return;
+    }
     inputEl.value = '';
     playarrs.push(value);
 
@@ -25,7 +28,6 @@ btnEl.addEventListener('click', function () {
         let div = document.createElement('div');
         div.textContent = playarr;
         div.classList.add('play-btn');
-
         return div;
     });
     playCont.append(...addDiv);

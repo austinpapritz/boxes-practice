@@ -46,7 +46,7 @@ main {
     row-gap: 15px;
 }
 
-#alpha75 div {
+#alpha75 .border {
     border: solid black;
 }
 
@@ -64,11 +64,13 @@ main {
 
 .play-btn {
     background: limegreen;
+    border: solid black;
 }
 
 .boards-container {
     display: grid;
     grid-template-rows: 90% 10%;
+    border: solid black;
 }
 
 .chessboard {
